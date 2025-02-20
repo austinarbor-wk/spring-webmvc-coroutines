@@ -1,0 +1,16 @@
+[versions]
+junit = "5.11.4"
+kotlin = "2.1.10"
+kotlinx-coroutines = "1.10.1"
+springBoot = "3.4.2"
+
+[libraries]
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit" }
+kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin"}
+kotlinx-coroutinesBom = { group = "org.jetbrains.kotlinx", name= "kotlinx-coroutines-bom", version.ref = "kotlinx-coroutines" }
+spring-springBootDependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot"}
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot"}
